@@ -1,14 +1,54 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Weather advice!
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster. Testing
+  Hello! Welcome! <!-- enter name option -->
   <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
+   <!-- Tabs -->
+   Thank you for choosing our weather app! Please select an option below.
   </p>
+  <ion-list>
+    <!-- Weather -->
+    <button ion-item>
+        <ion-icon item-left name="cloudy-night"></ion-icon>        
+      <h2>View Weather</h2>
+      <ion-note item-end>
+        See what's in store today
+        </ion-note>
+      </button>
+    <!-- Flash light -->
+    <!-- Insert toggle -->
+    <button ion-item>
+        <ion-icon item-left name="flash"></ion-icon>      
+        <h2>Flashlight!</h2>
+      <ion-note item-end>
+        Can't see? 
+        </ion-note>
+      </button>
+    <!--Holiday Destinations -->
+    <button ion-item>
+        <ion-icon item-left name="images"></ion-icon>      
+        <h2>Holiday Destinations</h2>
+      <ion-note item-end>
+        Hot Countries 
+      </ion-note>
+    </button>
+    <!-- What to do on a rainy day? -->
+    <button ion-item>
+        <ion-icon item-left name="umbrella"></ion-icon>      
+        <h2>Indoor fun</h2>
+      <ion-note item-end>
+        Raining? No problem!
+        </ion-note>
+    </button>
+    
+
+
+
+  </ion-list>
 </ion-content>
