@@ -5,6 +5,7 @@ import { IndoorPage } from './../indoor/indoor';
 import { WeatherPage } from './../weather/weather';
 
 
+
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
@@ -26,6 +27,7 @@ export class HomePage {
   openHolidayDest() {
     this.navCtrl.push(HolidayDestPage);
     }
-
+  
     
 }
+
