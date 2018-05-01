@@ -11,6 +11,7 @@ import { IndoorPage } from '../pages/indoor/indoor';
 import { WeatherPage } from '../pages/weather/weather';
 import { MovieProvider } from '../providers/movie/movie';
 
+
 @NgModule({
   declarations: [
     MyApp,

@@ -23,9 +23,10 @@
       </button>
     <!-- Flash light -->
     <!-- Insert toggle -->
-    <button ion-item>
+    <button (click)="toggleFlashlight"ion-item>
+        <ion-toggle id="flTog" checked="false"></ion-toggle>
         <ion-icon item-left name="flash"></ion-icon>      
-        <h2>Flashlight!</h2>
+        <ion-label>Flashlight!</ion-label>
       <ion-note item-end>
         Can't see? 
         </ion-note>

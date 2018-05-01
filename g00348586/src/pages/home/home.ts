@@ -3,6 +3,7 @@ import { NavController } from 'ionic-angular';
 import { HolidayDestPage } from './../holiday-dest/holiday-dest';
 import { IndoorPage } from './../indoor/indoor';
 import { WeatherPage } from './../weather/weather';
+import { Flashlight } from '@ionic-native/flashlight';
 
 
 
@@ -12,7 +13,7 @@ import { WeatherPage } from './../weather/weather';
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController,private flashlight:Flashlight) {
 
   }
  // open indoor page
@@ -27,7 +28,11 @@ export class HomePage {
   openHolidayDest() {
     this.navCtrl.push(HolidayDestPage);
     }
-  
+  toggleFlashlight(){
+    console.log("off/on");
+    this.flashlight.toggle(); 
+  }
+ 
     
 }
 
