@@ -19,7 +19,7 @@ export class HomePage {
   openIndoor() {
     this.navCtrl.push(IndoorPage);
     }
-  // open weather page
+  // open Movie page
   openWeather() {
     this.navCtrl.push(WeatherPage);
     }

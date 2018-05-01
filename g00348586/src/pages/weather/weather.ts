@@ -69,31 +69,31 @@ export class WeatherPage {
           this.testRadioOpen = false;
           this.testRadioResult = data;
           //if statements for which result will be chosen
-          if (alert.data = "war"){
+          if (data == "war"){
             this.mp.GetMovieDataWar().subscribe(data =>
               {
                   this.movies = data.Search;
               })
           }
-          else if (data = "sad"){
+          else if (data == "sad"){
             this.mp.GetMovieDataSad().subscribe(data =>
               {
                   this.movies = data.Search;
               })
           }
-          else if (data = "action"){
+          else if (data == "action"){
             this.mp.GetMovieDataAction().subscribe(data =>
               {
                   this.movies = data.Search;
               })
           }
-          else if(data = "love"){
+          else if(data == "love"){
             this.mp.GetMovieDataLove().subscribe(data =>
               {
                   this.movies = data.Search;
               })
           }
-          else if(data = "adventure"){
+          else if(data == "adventure"){
             this.mp.GetMovieDataAdventure().subscribe(data =>
               {
                   this.movies = data.Search;
@@ -105,9 +105,6 @@ export class WeatherPage {
        this.testRadioOpen = true;
       });
   }//radio
-
   
-  
-
 }
 
