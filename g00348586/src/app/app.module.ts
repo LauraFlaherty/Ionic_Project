@@ -10,6 +10,8 @@ import { HolidayDestPage } from '../pages/holiday-dest/holiday-dest';
 import { IndoorPage } from '../pages/indoor/indoor';
 import { WeatherPage } from '../pages/weather/weather';
 import { MovieProvider } from '../providers/movie/movie';
+import { Flashlight } from '@ionic-native/flashlight';
+
 
 
 @NgModule({
@@ -37,7 +39,8 @@ import { MovieProvider } from '../providers/movie/movie';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    MovieProvider
+    MovieProvider,
+    Flashlight
   ]
 })
 export class AppModule {}
