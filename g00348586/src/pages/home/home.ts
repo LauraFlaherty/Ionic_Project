@@ -4,7 +4,9 @@ import { HolidayDestPage } from './../holiday-dest/holiday-dest';
 import { IndoorPage } from './../indoor/indoor';
 import { WeatherPage } from './../weather/weather';
 import { Flashlight } from '@ionic-native/flashlight';
-
+import { IonicStorageModule } from '@ionic/storage';
+import { FormsModule } from '@angular/forms'; 
+import { Storage } from '@ionic/storage'; 
 
 
 @Component({
@@ -12,8 +14,9 @@ import { Flashlight } from '@ionic-native/flashlight';
   templateUrl: 'home.html'
 })
 export class HomePage {
-
-  constructor(public navCtrl: NavController,private flashlight:Flashlight) {
+  //to show data binding 
+  name: string="User"; 
+  constructor(public navCtrl: NavController,private flashlight:Flashlight,public storage:Storage) {
 
   }
  // open indoor page

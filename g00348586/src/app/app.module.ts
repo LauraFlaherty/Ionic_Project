@@ -12,8 +12,8 @@ import { WeatherPage } from '../pages/weather/weather';
 import { MovieProvider } from '../providers/movie/movie';
 import { Flashlight } from '@ionic-native/flashlight';
 import { Vibration } from '@ionic-native/vibration';
-
-
+import { FormsModule } from '@angular/forms'; 
+import { IonicStorageModule } from '@ionic/storage';
 
 
 @NgModule({
@@ -26,9 +26,11 @@ import { Vibration } from '@ionic-native/vibration';
   ],
   imports: [
     BrowserModule,
-    HttpClientModule,    
-    IonicModule.forRoot(MyApp)
-  ],
+    HttpClientModule,  
+    FormsModule,  
+    IonicModule.forRoot(MyApp),
+    IonicStorageModule.forRoot()
+    ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
@@ -43,7 +45,8 @@ import { Vibration } from '@ionic-native/vibration';
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     MovieProvider,
     Flashlight,
-    Vibration
+    Vibration,
+    Storage
   ]
 })
 export class AppModule {}

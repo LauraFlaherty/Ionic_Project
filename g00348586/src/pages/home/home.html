@@ -7,7 +7,13 @@
 </ion-header>
 
 <ion-content padding>
-  Hello! Welcome! <!-- enter name option -->
+  <h2>Hello</h2>
+    <!-- enter name option -->
+    <ion-item>
+    <ion-input placeholder="Enter name here" [ngModel]="name"></ion-input>
+  </ion-item>
+    <h3>Welcome {{ name }}</h3>
+  
   <p>
    <!-- Tabs -->
    Thank you for choosing our app! Please select an option below.
@@ -39,12 +45,12 @@
         European Cities
       </ion-note>
     </button>
-    <!-- What to do on a rainy day? -->
+    <!-- Movie Characters -->
     <button (click)="openIndoor()" ion-item>
-        <ion-icon item-left name="umbrella"></ion-icon>      
-        <h2>Indoor fun</h2>
+        <ion-icon item-left name="people"></ion-icon>      
+        <h2>Movie characters</h2>
       <ion-note item-end>
-        Raining? No problem!
+        Is your character here?
         </ion-note>
     </button>
     
