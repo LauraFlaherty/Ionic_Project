@@ -1,0 +1,41 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Review</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list radio-group [(ngModel)]="myStatus">
+
+    <ion-item>
+      <ion-label>One</ion-label>
+      <ion-radio value="One"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Two</ion-label>
+      <ion-radio value="Two"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Three</ion-label>
+      <ion-radio value="Three"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Four</ion-label>
+      <ion-radio value="Four"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+        <ion-label>Five</ion-label>
+        <ion-radio value="Five"></ion-radio>
+      </ion-item>
+
+  </ion-list>
+
+  <button ion-button (click)="saveStatus()">Save</button>
+</ion-content>

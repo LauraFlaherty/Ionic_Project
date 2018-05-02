@@ -27,7 +27,7 @@ export class HolidayDestPage {
     alert.present()
   }
   doVibrate(){
-    //concole.log to show that the function is in action
+    //console.log to show that the function is in action
     console.log("Vibration works");
     //vibrates for a second. Vibration duration ignored on iOS 
     this.vibration.vibrate(1000);

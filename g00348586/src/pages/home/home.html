@@ -7,14 +7,14 @@
 </ion-header>
 
 <ion-content padding>
-  <h2>Hello</h2>
+  <h3>Hello</h3>
     <!-- enter name option -->
     <ion-item>
     <ion-input placeholder="Enter name here" [ngModel]="name"></ion-input>
   </ion-item>
     <h3>Welcome {{ name }}</h3>
-  
   <p>
+    
    <!-- Tabs -->
    Thank you for choosing our app! Please select an option below.
   </p>
@@ -22,7 +22,7 @@
     <!-- Movies -->
     <button (click)="openWeather()" ion-item>
         <ion-icon item-left name="videocam"></ion-icon>        
-      <h2>View Movies</h2>
+      <h2>Movies</h2>
       <ion-note item-end>
       Movies you might like!
         </ion-note>
@@ -40,7 +40,7 @@
     <!--Holiday Destinations -->
     <button (click)="openHolidayDest()" ion-item>
         <ion-icon item-left name="images"></ion-icon>      
-        <h2>Holiday Destinations</h2>
+        <h2>Holiday?</h2>
       <ion-note item-end>
         European Cities
       </ion-note>
@@ -48,11 +48,18 @@
     <!-- Movie Characters -->
     <button (click)="openIndoor()" ion-item>
         <ion-icon item-left name="people"></ion-icon>      
-        <h2>Movie characters</h2>
+        <h2>Fictional Characters</h2>
       <ion-note item-end>
-        Is your character here?
         </ion-note>
     </button>
     
   </ion-list>
+  
+  <!--Data storage-->
+  <!--Opens the status page-->
+  <h3>
+      You have given this app {{Status}} stars out of five!
+  </h3>
+    <button ion-button round color="secondary" (click)="openStatusPage()">Rate the app!</button>
+
 </ion-content>

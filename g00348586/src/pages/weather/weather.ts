@@ -10,6 +10,7 @@ import { AlertController } from 'ionic-angular';
   templateUrl: 'weather.html',
 
 })
+//Movie Page
 export class WeatherPage {
   movies:any[]=[];  
   testRadioOpen: boolean;
@@ -59,7 +60,7 @@ export class WeatherPage {
           console.log('Radio data:', data);
           this.testRadioOpen = false;
           this.testRadioResult = data;
-          //if statements for which result will be chosen
+          //if statements for which movie database  will be chosen
           if (data == "war"){
             this.mp.GetMovieDataWar().subscribe(data =>
               {

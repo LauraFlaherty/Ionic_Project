@@ -14,6 +14,7 @@ import { Flashlight } from '@ionic-native/flashlight';
 import { Vibration } from '@ionic-native/vibration';
 import { FormsModule } from '@angular/forms'; 
 import { IonicStorageModule } from '@ionic/storage';
+import { StatusPage } from '../pages/status/status';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { IonicStorageModule } from '@ionic/storage';
     HomePage,
     HolidayDestPage, 
     IndoorPage, 
-    WeatherPage
+    WeatherPage,
+    StatusPage
   ],
   imports: [
     BrowserModule,
@@ -37,7 +39,8 @@ import { IonicStorageModule } from '@ionic/storage';
     HomePage,
     HolidayDestPage, 
     IndoorPage, 
-    WeatherPage
+    WeatherPage,
+    StatusPage
   ],
   providers: [
     StatusBar,

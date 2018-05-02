@@ -7,15 +7,15 @@
 
 </ion-header>
 
-
+<!--Input the Movies-->
 <ion-content padding>
-  <button ion-button block light (click)="doRadio()">Genre?</button>
+  <button ion-button block color="secondary" (click)="doRadio()">Genre?</button>
     <ion-list>
       <ion-item *ngFor="let movie of movies">
-          <p>{{movie.Title}}</p>
-          <p>{{movie.Year}}</p>
-          <p>{{movie.imdbID}}</p>
-          <ion-img width="200" height="200" src="{{movie.Poster}}"></ion-img>
+          <h2>Movie name: {{movie.Title}}</h2>
+          <p>Release year: {{movie.Year}}</p>
+          <p>Imdb Id: {{movie.imdbID}}</p>
+         <!--<ion-img style="width: 200px; height: 200px;" src="{{movie.Poster}}"></ion-img>-->
         </ion-item>
       </ion-list>
 
