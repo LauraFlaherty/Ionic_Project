@@ -1,13 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
-/**
- * Generated class for the HolidayDestPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
 import { AlertController } from 'ionic-angular';
+import { Vibration } from '@ionic-native/vibration';
+
 
 @IonicPage()
 @Component({
@@ -16,7 +11,7 @@ import { AlertController } from 'ionic-angular';
 })
 export class HolidayDestPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams,public alerCtrl: AlertController) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,public alerCtrl: AlertController,private vibration: Vibration) {
   }
 
   ionViewDidLoad() {
@@ -29,6 +24,11 @@ export class HolidayDestPage {
       buttons: ['Ok']
     });
     alert.present()
+  }
+  doVibrate(){
+    console.log("Vibration works");
+    //vibrates for a second. Vibration duration ignored on iOS 
+    this.vibration.vibrate(1000);
   }
 
 }

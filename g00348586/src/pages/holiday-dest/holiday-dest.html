@@ -13,32 +13,33 @@
 </ion-header>
 
 <ion-content class="card-background-page">
-
-  <ion-card>
+<!-- When cards are clicked, device will vibrate-->
+  <ion-card (click)="doVibrate()">
     <img src="assets/imgs/amsterdam.png"/>
     <div class="card-title">Amsterdam</div>
   </ion-card>
 
-  <ion-card>
+  <ion-card (click)="doVibrate()">
     <img src="assets/imgs/berlin.png"/>
     <div class="card-title">Berlin</div>
   </ion-card>
 
-  <ion-card>
+  <ion-card (click)="doVibrate()">
     <img src="assets/imgs/paris.png"/>
     <div class="card-title">Paris</div>
   </ion-card>
 
-  <ion-card>
+  <ion-card (click)="doVibrate()">
     <img src="assets/imgs/dublin.png"/>
     <div class="card-title">Dublin</div>
   </ion-card>
   
-  <ion-card>
+  <ion-card (click)="doVibrate()">
     <img src="assets/imgs/London.png"/>
     <div class="card-title">London</div>
   </ion-card>
 
+  <!--Alert to notify you are at the end of the page -->
   <button ion-button round color="secondary" (click)="doAlert()">End of page</button>
 </ion-content>
 

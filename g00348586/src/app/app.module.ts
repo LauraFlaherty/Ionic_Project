@@ -11,6 +11,8 @@ import { IndoorPage } from '../pages/indoor/indoor';
 import { WeatherPage } from '../pages/weather/weather';
 import { MovieProvider } from '../providers/movie/movie';
 import { Flashlight } from '@ionic-native/flashlight';
+import { Vibration } from '@ionic-native/vibration';
+
 
 
 
@@ -40,7 +42,8 @@ import { Flashlight } from '@ionic-native/flashlight';
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     MovieProvider,
-    Flashlight
+    Flashlight,
+    Vibration
   ]
 })
 export class AppModule {}
